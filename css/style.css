@@ -1,0 +1,60 @@
+body {
+	font-family: san
+}
+
+nav {
+	/*outline: 1px solid red; etiqueta de tipo bloque */
+	width: 200px;
+}
+
+/* ul y li son etiquetas de tipo bloque, ocupan el total del ancho disponible de su etiqueta contenedora*/
+ul {
+	/*outline: 1px solid yellow; */
+	list-style: none; /* quita las viñetas */
+	margin: 0;
+	padding: 0; /* quitando estilos por defecto */
+	line-height: 30px;
+}
+
+li {
+	/* outline: 1px solid red; */
+	background: #F5F5F0;
+}
+
+/* Estados de los enlaces(LoVe/HAte): link, visited, hover, active */
+
+
+/* etiqueta de tipo inline, solo ocupa el espacio que necesita su contenido */
+a {
+	/* outline: 1px solid green; */
+	display: block; /* todos los items son navegables no solo desde el largo de su nombre ya que contiene el ancho disponible de su etiqueta padre*/
+	text-decoration: none;
+	color: #000;
+	padding-left: 10px;
+}
+
+a:hover {
+	background: #E0E0D1
+}
+
+a:active {
+	background: #333;
+	color: #FFF;
+}
+
+
+ul li:first-child {
+	background: #F9A91A
+}
+
+ul li:first-child a {
+	color: #FFF;
+}
+
+ul li:first-child a:hover {
+	color: #000;
+}
+
+ul li:first-child a:active {
+	color: #FFF;
+}
